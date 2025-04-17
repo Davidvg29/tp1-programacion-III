@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body {
+    overflow-x: hidden;
+    user-select: none;
+  }
+  
+
+/* header */
+header{
+  width: 100vw;
+  height: 200px;
+  background-color: black;
+}
+
+.portada{
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+.portada img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: opacity(0.5);
+}
+.portada h1 {
+    width: 100%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%); 
+   color: rgb(239, 239, 244);
+   font-size: 40px;
+   z-index: 2; 
+   text-align: center;
+}
+.portada b{
+    text-decoration: underline;
+    font-weight:900;
+    font-size: 50px;
+}
+
+main{
+   width: 100%;
+   height: auto;
+}
+
+/* presentacion */
+.presentacion{
+    width: 100%;
+    height: 80vh;
+    /* background-color: red; */
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+.img-presentacion{
+    width: 50%;
+    text-align: center;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: start;
+}
+.p-presentacion{
+    width: 50%;
+    text-align: center;
+    /* background-color: rgb(0, 255, 13); */
+    display: flex;
+    justify-content: end;
+    color: rgb(0, 13, 65);
+}
+.presentacion img{
+    width: 200px;
+    /* height: 100px; */
+     margin: 100px;
+}
+.presentacion p{
+    width: 400px;
+}
+
+/* hobbies */
+ .conteiner-hobbies{
+    background-color: rgb(242, 246, 249);
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+ }
+.conteiner-hobbies h2{
+    font-size: 80px;
+    font-weight: 800;
+    color: rgb(0, 13, 65);
+}
+.conteiner-hobbies a{
+    /* text-decoration: none; */
+    color: rgb(0, 13, 65);
+}
+.conteiner-hobbies li{
+    margin: 5px;
+}
+    
+/* conocimientos */
+.conteiner-conocimientos{
+    /* background-color: red; */
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.conteiner-conocimientos h2{
+    font-size: 80px;
+    font-weight: 800;
+    color: rgb(0, 13, 65);
+}
+.conteiner-conocimientos ul{
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.conteiner-conocimientos li{
+    margin-left: 40px;
+    margin-top: 5px;
+}
+
+/* redes */
+.conteiner-redes{
+    background-color: rgb(242, 246, 249);
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.conteiner-redes h2{
+    font-size: 80px;
+    font-weight: 800;
+    color: rgb(0, 13, 65);
+}
+.conteiner-redes img{
+    width: 40px;
+    margin: 10px;
+}
+
+/* formulario */
+ .conteiner-form{
+    width: 100%;
+    height: auto;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    margin-top: 200px;
+    color: rgb(0, 13, 65);
+ }
+ .conteiner-form h2{
+    font-size: 80px;
+    font-weight: 800;
+    color: rgb(0, 13, 65);
+}
+ .conteiner-form form{
+    width: 400px;
+    height: auto;
+    /* background-color: blue; */
+     border: 1px solid rgb(0, 13, 65);
+     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin: 50px;
+    padding: 40px;
+ }
+ .conteiner-form form input, textarea, select{
+    margin-bottom: 10px;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 13, 65);
+    padding: 5px;
+ }
+ .conteiner-form form button{
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: rgb(0, 13, 65);
+    border: none;
+    color: rgb(231, 231, 231);
+    font-size: 20px;
+ }
+ #button:hover{
+    cursor: pointer;
+ }  
+
+ /* footer */
+  footer{
+    background-color: rgb(0, 13, 65);
+    width: 100%;
+    height: 200px;
+    color: rgb(231, 231, 231);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 200px;
+  }
+  footer h3{
+    width: 80%;
+  }
